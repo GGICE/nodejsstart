@@ -1,0 +1,531 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="../manifest.appcache">
+    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+        
+        <meta charset="UTF-8">
+        <title>3.5链接Mongo和Node.js | 60分钟学会使用Node.js+Express+mongoDB</title>
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="ggice">
+        <meta name="description" content="原文地址[http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/](http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/)">
+        <meta name="keywords" content="gitbook,github" >
+        <meta name="generator" content="www.gitbook.io">
+
+        
+        <link rel="next" href="../part4/第四部分 写入数据库.html" />
+        
+        
+        <link rel="prev" href="../part3/添加数据.html" />
+        
+
+        <meta property="og:title" content="3.5链接Mongo和Node.js | 60分钟学会使用Node.js+Express+mongoDB">
+        <meta property="og:site_name" content="60分钟学会使用Node.js+Express+mongoDB">
+        <meta property="og:type" content="book">
+        <meta property="og:locale" content="en_US">
+
+        <meta property="book:author" content="https://github.com/ggice">
+        <meta property="book:tag" content="GitBook">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    </head>
+    <body>
+        
+
+        <link rel="stylesheet" href="../gitbook/style.css">
+        
+
+
+        
+    <div class="book" data-github="ggice/nodejsstart" data-level="3.5" data-basepath=".." data-revision="1400316897749">
+    <div class="book-header">
+    <!-- Actions Left -->
+    
+    <a href="https://github.com/ggice/nodejsstart" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+	<div class="dropdown-caret">
+  <span class="caret-outer"></span>
+  <span class="caret-inner"></span>
+</div>
+
+	<div class="btn-group btn-block">
+		<button id="reduce-font-size" class="btn btn-default">A</button>
+		<button id="enlarge-font-size" class="btn btn-default">A</button>
+	</div>
+
+	<ul class="list-group font-family-list">
+		<li class="list-group-item" data-font="0">Serif</li>
+		<li class="list-group-item" data-font="1">Sans</li>
+	</ul>
+
+	<div class="btn-group btn-group-xs btn-block color-theme-list">
+	  <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+	  <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+	  <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+	</div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="twitter"><i class="fa fa-twitter"></i></a>
+
+    
+    <a href="https://github.com/ggice/nodejsstart/stargazers" target="_blank" class="btn pull-right count-star"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/ggice/nodejsstart/watchers" target="_blank" class="btn pull-right count-watch"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="../" >60分钟学会使用Node.js+Express+mongoDB</a>
+    </h1>
+</div>
+
+    <div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        <li>
+            <a href="https://github.com/ggice" target="blank">About the author</a>
+        </li>
+        <li>
+            <a href="https://github.com/ggice/nodejsstart/issues" target="blank">Questions and Issues</a>
+        </li>
+        <li>
+            <a href="https://github.com/ggice/nodejsstart/edit/master/part3/链接Mongo和Node.js.md" target="blank">Edit and Contribute</a>
+        </li>
+        <li class="divider"></li>
+        
+        <li data-level="0" data-path="index.html">
+            <a href="../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+            <li  data-level="1" data-path="part1/第一部分 15分钟的安装时间.html">
+                
+                <a href="../part1/第一部分 15分钟的安装时间.html">
+                    <i class="fa fa-check"></i> <b>1.</b> 第一部分 15分钟的安装时间
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="1.1" data-path="part1/第一步 安装Node.js.html">
+                            
+                            <a href="../part1/第一步 安装Node.js.html">
+                                <i class="fa fa-check"></i> <b>1.1.</b> 1.1安装Node.js
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="1.2" data-path="part1/安装Express.html">
+                            
+                            <a href="../part1/安装Express.html">
+                                <i class="fa fa-check"></i> <b>1.2.</b> 1.2安装Express
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="1.3" data-path="part1/创建一个Express项目.html">
+                            
+                            <a href="../part1/创建一个Express项目.html">
+                                <i class="fa fa-check"></i> <b>1.3.</b> 1.3创建一个Express项目
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="1.4" data-path="part1/编辑相关内容.html">
+                            
+                            <a href="../part1/编辑相关内容.html">
+                                <i class="fa fa-check"></i> <b>1.4.</b> 1.4编辑相关内容
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="1.5" data-path="part1/安装依赖.html">
+                            
+                            <a href="../part1/安装依赖.html">
+                                <i class="fa fa-check"></i> <b>1.5.</b> 1.5安装依赖
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="2" data-path="part2/第二部分 开始写‘’Hello World‘.html">
+                
+                <a href="../part2/第二部分 开始写‘’Hello World‘.html">
+                    <i class="fa fa-check"></i> <b>2.</b> 第二部分 开始写‘’Hello World‘
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="3" data-path="part3/创建数据库并存取数据.html">
+                
+                <a href="../part3/创建数据库并存取数据.html">
+                    <i class="fa fa-check"></i> <b>3.</b> 第三部分 创建数据库并存取数据
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="3.1" data-path="part3/安装MONGODB数据库.html">
+                            
+                            <a href="../part3/安装MONGODB数据库.html">
+                                <i class="fa fa-check"></i> <b>3.1.</b> 3.1安装MONGODB数据库
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="3.2" data-path="part3/README.html">
+                            
+                            <a href="../part3/README.html">
+                                <i class="fa fa-check"></i> <b>3.2.</b> 3.2运行 MONGOD 和 MONGO
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="3.3" data-path="part3/建立一个数据库.html">
+                            
+                            <a href="../part3/建立一个数据库.html">
+                                <i class="fa fa-check"></i> <b>3.3.</b> 3.3建立一个数据库
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="3.4" data-path="part3/添加数据.html">
+                            
+                            <a href="../part3/添加数据.html">
+                                <i class="fa fa-check"></i> <b>3.4.</b> 3.4添加数据
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="3.5" data-path="part3/链接Mongo和Node.js.html">
+                            
+                            <a href="../part3/链接Mongo和Node.js.html">
+                                <i class="fa fa-check"></i> <b>3.5.</b> 3.5链接Mongo和Node.js
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="4" data-path="part4/第四部分 写入数据库.html">
+                
+                <a href="../part4/第四部分 写入数据库.html">
+                    <i class="fa fa-check"></i> <b>4.</b> 第四部分 写入数据库
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="4.1" data-path="part4/4.1建立数据输入.html">
+                            
+                            <a href="../part4/4.1建立数据输入.html">
+                                <i class="fa fa-check"></i> <b>4.1.</b> 4.1建立数据输入
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="4.2" data-path="part4/建立数据库函数.html">
+                            
+                            <a href="../part4/建立数据库函数.html">
+                                <i class="fa fa-check"></i> <b>4.2.</b> 4.2建立数据库函数
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="4.3" data-path="part4/连接并且数据存入数据库.html">
+                            
+                            <a href="../part4/连接并且数据存入数据库.html">
+                                <i class="fa fa-check"></i> <b>4.3.</b> 4.3连接并且数据存入数据库
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="5" data-path="part5/Chapter.html">
+                
+                <a href="../part5/Chapter.html">
+                    <i class="fa fa-check"></i> <b>5.</b> 接下来下一步
+                </a>
+                
+                
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 72.22222222222223%;min-width: 66.66666666666667%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../part1/第一部分 15分钟的安装时间.html" title="第一部分 15分钟的安装时间" class="chapter done new-chapter" data-progress="1" style="left: 5.555555555555555%;"></a>
+    
+        <a href="../part1/第一步 安装Node.js.html" title="1.1安装Node.js" class="chapter done " data-progress="1.1" style="left: 11.11111111111111%;"></a>
+    
+        <a href="../part1/安装Express.html" title="1.2安装Express" class="chapter done " data-progress="1.2" style="left: 16.666666666666668%;"></a>
+    
+        <a href="../part1/创建一个Express项目.html" title="1.3创建一个Express项目" class="chapter done " data-progress="1.3" style="left: 22.22222222222222%;"></a>
+    
+        <a href="../part1/编辑相关内容.html" title="1.4编辑相关内容" class="chapter done " data-progress="1.4" style="left: 27.77777777777778%;"></a>
+    
+        <a href="../part1/安装依赖.html" title="1.5安装依赖" class="chapter done " data-progress="1.5" style="left: 33.333333333333336%;"></a>
+    
+        <a href="../part2/第二部分 开始写‘’Hello World‘.html" title="第二部分 开始写‘’Hello World‘" class="chapter done new-chapter" data-progress="2" style="left: 38.888888888888886%;"></a>
+    
+        <a href="../part3/创建数据库并存取数据.html" title="第三部分 创建数据库并存取数据" class="chapter done new-chapter" data-progress="3" style="left: 44.44444444444444%;"></a>
+    
+        <a href="../part3/安装MONGODB数据库.html" title="3.1安装MONGODB数据库" class="chapter done " data-progress="3.1" style="left: 50%;"></a>
+    
+        <a href="../part3/README.html" title="3.2运行 MONGOD 和 MONGO" class="chapter done " data-progress="3.2" style="left: 55.55555555555556%;"></a>
+    
+        <a href="../part3/建立一个数据库.html" title="3.3建立一个数据库" class="chapter done " data-progress="3.3" style="left: 61.111111111111114%;"></a>
+    
+        <a href="../part3/添加数据.html" title="3.4添加数据" class="chapter done " data-progress="3.4" style="left: 66.66666666666667%;"></a>
+    
+        <a href="../part3/链接Mongo和Node.js.html" title="3.5链接Mongo和Node.js" class="chapter done " data-progress="3.5" style="left: 72.22222222222223%;"></a>
+    
+        <a href="../part4/第四部分 写入数据库.html" title="第四部分 写入数据库" class="chapter  new-chapter" data-progress="4" style="left: 77.77777777777777%;"></a>
+    
+        <a href="../part4/4.1建立数据输入.html" title="4.1建立数据输入" class="chapter  " data-progress="4.1" style="left: 83.33333333333333%;"></a>
+    
+        <a href="../part4/建立数据库函数.html" title="4.2建立数据库函数" class="chapter  " data-progress="4.2" style="left: 88.88888888888889%;"></a>
+    
+        <a href="../part4/连接并且数据存入数据库.html" title="4.3连接并且数据存入数据库" class="chapter  " data-progress="4.3" style="left: 94.44444444444444%;"></a>
+    
+        <a href="../part5/Chapter.html" title="接下来下一步" class="chapter  new-chapter" data-progress="5" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_1217">
+                    
+                        <h1 id="-mongo-node-js">链接Mongo和Node.js</h1>
+<p>This is where the rubber meets the road. Let&#39;s start by building a page that just spits out our DB entries in a mildly pretty form. Here&#39;s the HTML we&#39;re shooting to generate:</p>
+<pre><code>&lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;mailto:testuser1@testdomain.com&quot;&gt;testuser1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;mailto:testuser2@testdomain.com&quot;&gt;testuser2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;mailto:testuser3@testdomain.com&quot;&gt;testuser3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre><p>I know this isn&#39;t rocket science, but that&#39;s the point. We&#39;re just doing a simple DB read-and-write in this tutorial, not trying to build a whole website. First things first, we need to add a few lines to our main app.js file – the heart and soul of our app – in order to actually connect to our MongoDB instance. Open C:\node\nodetest1\app.js and at the top you&#39;ll see:</p>
+<p><em>C:\NODE\NODETEST1\APP.JS</em></p>
+<pre><code>var express = require(&#39;express&#39;);
+var path = require(&#39;path&#39;);
+var favicon = require(&#39;static-favicon&#39;);
+var logger = require(&#39;morgan&#39;);
+var cookieParser = require(&#39;cookie-parser&#39;);
+var bodyParser = require(&#39;body-parser&#39;);
+</code></pre><p>Now add these three lines:</p>
+<p><em>C:\NODE\NODETEST1\APP.JS</em></p>
+<pre><code>var express = require(&#39;express&#39;);
+var path = require(&#39;path&#39;);
+var favicon = require(&#39;static-favicon&#39;);
+var logger = require(&#39;morgan&#39;);
+var cookieParser = require(&#39;cookie-parser&#39;);
+var bodyParser = require(&#39;body-parser&#39;);
+
+// New Code
+var mongo = require(&#39;mongodb&#39;);
+var monk = require(&#39;monk&#39;);
+var db = monk(&#39;localhost:27017/nodetest1&#39;);
+</code></pre><p>These lines tell our app we want to talk to MongoDB, we&#39;re going to use Monk to do it, and our database is located at localhost:27017/nodetest1. Note that 27017 is the default port your MongoDB instance should be running on. If for some reason you&#39;ve changed it, obviously use that port instead. Now look at the bottom of the file, where you have this:</p>
+<p><em>C:\NODE\NODETEST1\APP.JS</em></p>
+<pre><code>app.use(&#39;/&#39;, routes);
+app.use(&#39;/users&#39;, users);
+</code></pre><p>We need to do some work here. Those app.use statements (along with the others you&#39;ll find in app.js) are establishing middleware for Express. The short, simple explanation is: they&#39;re providing custom functions that the rest of your app can make use of. It&#39;s pretty straightforward, but due to chaining it needs to come before our route definitions, so that they can make use of it.</p>
+<p>Above the two lines just mentioned, add the following:</p>
+<p><em>C:\NODE\NODETEST1\APP.JS</em></p>
+<pre><code>// Make our db accessible to our router
+app.use(function(req,res,next){
+    req.db = db;
+    next();
+});
+</code></pre><p>NOTE: If you don&#39;t put this above the routing stuff mentioned above (app.use(&#39;/&#39;, routes);), your app WILL NOT WORK.</p>
+<p>We already defined &quot;db&quot; when we added Mongo and Monk to app.js. It&#39;s our Monk connection object. By adding this function to app.use, we&#39;re adding that object to every HTTP request (ie: &quot;req&quot;) our app makes. Note: this is probably sub-optimal for performance but, again, we&#39;re going quick-n-dirty here.</p>
+<p>So, again, that code needs to go above our routing code. Your entire app.js should look like this, now:</p>
+<p><em>C:\NODE\NODETEST1\APP.JS</em></p>
+<pre><code>var express = require(&#39;express&#39;);
+var path = require(&#39;path&#39;);
+var favicon = require(&#39;static-favicon&#39;);
+var logger = require(&#39;morgan&#39;);
+var cookieParser = require(&#39;cookie-parser&#39;);
+var bodyParser = require(&#39;body-parser&#39;);
+
+// New Code
+var mongo = require(&#39;mongodb&#39;);
+var monk = require(&#39;monk&#39;);
+var db = monk(&#39;localhost:27017/nodetest1&#39;);
+
+var routes = require(&#39;./routes/index&#39;);
+var users = require(&#39;./routes/users&#39;);
+
+var app = express();
+
+// view engine setup
+app.set(&#39;views&#39;, path.join(__dirname, &#39;views&#39;));
+app.set(&#39;view engine&#39;, &#39;jade&#39;);
+
+app.use(favicon());
+app.use(logger(&#39;dev&#39;));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, &#39;public&#39;)));
+
+// Make our db accessible to our router
+app.use(function(req,res,next){
+    req.db = db;
+    next();
+});
+
+app.use(&#39;/&#39;, routes);
+app.use(&#39;/users&#39;, users);
+
+/// catch 404 and forwarding to error handler
+app.use(function(req, res, next) {
+    var err = new Error(&#39;Not Found&#39;);
+    err.status = 404;
+    next(err);
+});
+
+/// error handlers
+
+// development error handler
+// will print stacktrace
+if (app.get(&#39;env&#39;) === &#39;development&#39;) {
+    app.use(function(err, req, res, next) {
+        res.status(err.status || 500);
+        res.render(&#39;error&#39;, {
+            message: err.message,
+            error: err
+        });
+    });
+}
+
+// production error handler
+// no stacktraces leaked to user
+app.use(function(err, req, res, next) {
+    res.status(err.status || 500);
+    res.render(&#39;error&#39;, {
+        message: err.message,
+        error: {}
+    });
+});
+
+module.exports = app;
+</code></pre><p>Next thing we need to do is modify our route so that we can actually show data that&#39;s held in our database, using our db object.</p>
+<p>STEP 6 – PULL YOUR DATA FROM MONGO AND DISPLAY IT</p>
+<p>Open up C:\node\nodetest1\routes\index.js in your editor. It&#39;s still got the index route, and the goofy /helloworld route. Let&#39;s add a third:</p>
+<p><em>C:\NODE\NODETEST1\ROUTES\INDEX.JS</em></p>
+<pre><code>/* GET Userlist page. */
+router.get(&#39;/userlist&#39;, function(req, res) {
+    var db = req.db;
+    var collection = db.get(&#39;usercollection&#39;);
+    collection.find({},{},function(e,docs){
+        res.render(&#39;userlist&#39;, {
+            &quot;userlist&quot; : docs
+        });
+    });
+});
+</code></pre><p>OK … that&#39;s getting fairly complicated. All it&#39;s really doing, though, is extracting the &quot;db&quot; object we passed to our http request, and then using that db connection to fill our &quot;docs&quot; variable with database documents, ie: user data. Then we do a page render just like the other two &quot;gets&quot; in this route file.</p>
+<p>Basically, we tell our app which collection we want to use (&#39;usercollection&#39;) and do a find, then return the results as the variable &quot;docs&quot;. Once we have those documents, we then do a render of userlist (which will need a corresponding Jade template), giving it the userlist variable to work with, and passing our database documents to that variable.</p>
+<p>Next let&#39;s set up our Jade template. Navigate to C:\node\nodetest1\views\ and open index.jade. Once again, immediately save it as userlist.jade. Then edit the HTML so it looks like this:</p>
+<p><em>C:\NODE\NODETEST1\VIEW\USERLIST.JADE</em></p>
+<pre><code>extends layout
+
+block content
+    h1.
+        User List
+    ul
+        each user, i in userlist
+            li
+                a(href=&quot;mailto:#{user.email}&quot;)= user.username
+</code></pre><p>This is saying that we&#39;re going to pull in the set of documents we just called userlist over in the route file, and then for each entry (named &#39;user&#39; during the loop), get the email and username values from the object and put them into our html. We&#39;ve also got the count – i – handy in case we need it, though in this instance we don&#39;t.</p>
+<p>We&#39;re all set. Save that file, and let&#39;s restart our node server. Remember how to do that? Go to your command prompt, head for C:\node\nodetest1\ and ctrl-c to kill your server if it&#39;s still running from way back before. Then type:</p>
+<p><em>COMMAND C:\NODE\NODETEST1\</em></p>
+<pre><code>C:\node\nodetest1&gt;npm start
+</code></pre><p>Now open your browser and head to <a href="http://localhost:3000/userlist" target="_blank">http://localhost:3000/userlist</a> and marvel in the results.
+<img src="http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/browsershot3.png" alt="">
+You&#39;re now pulling data from the DB and spitting it out onto a web page. Nice!</p>
+<p>There one more thing I badly wanted to cover in this tutorial, but because it&#39;s already about as long as the Bible, I&#39;m going to breeze through it here. You could very easily change your userlist view from an Express-driven web page complete with Jade template to a plain old JSON response. You could then access this with AJAX and manipulate it on the client-side, with jQuery for example, instead of on the server side. In fact, I wanted to cover that so badly that I wrote an entire second tutorial on it. You can find the link at the end of this one!</p>
+<p>Let&#39;s finish this up.</p>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../part3/添加数据.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../part4/第四部分 写入数据库.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
+        <script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="../gitbook/app.js"></script>
+        
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mixpanel/plugin.js"></script>
+    
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+    </body>
+</html>

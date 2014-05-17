@@ -1,0 +1,208 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'express-generator' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose cache add [ 'express-generator', null ]
+5 verbose cache add name=undefined spec="express-generator" args=["express-generator",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'express-generator',
+6 verbose parsed url   path: 'express-generator',
+6 verbose parsed url   href: 'express-generator' }
+7 silly lockFile 198a68d8-express-generator express-generator
+8 verbose lock express-generator /home/ggice/.npm/198a68d8-express-generator.lock
+9 silly lockFile 198a68d8-express-generator express-generator
+10 silly lockFile 198a68d8-express-generator express-generator
+11 verbose addNamed [ 'express-generator', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile bd41e3d3-express-generator express-generator@
+14 verbose lock express-generator@ /home/ggice/.npm/bd41e3d3-express-generator.lock
+15 silly addNameRange { name: 'express-generator', range: '*', hasData: false }
+16 verbose url raw express-generator
+17 verbose url resolving [ 'https://registry.npmjs.org/', './express-generator' ]
+18 verbose url resolved https://registry.npmjs.org/express-generator
+19 info trying registry request attempt 1 at 19:39:17
+20 verbose etag "24XCPYWGG3KKYR3Y2HD6PCGLC"
+21 http GET https://registry.npmjs.org/express-generator
+22 http 200 https://registry.npmjs.org/express-generator
+23 silly registry.get cb [ 200,
+23 silly registry.get   { date: 'Fri, 16 May 2014 11:39:18 GMT',
+23 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+23 silly registry.get     etag: '"BKIQKP0UJ0ZJLCESO3W1YN4BM"',
+23 silly registry.get     'content-type': 'application/json',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     'cache-control': 'max-age=1',
+23 silly registry.get     'content-length': '8775',
+23 silly registry.get     'accept-ranges': 'bytes',
+23 silly registry.get     age: '11068',
+23 silly registry.get     'x-served-by': 'cache-v42-ASH, cache-sv63-SJC3',
+23 silly registry.get     'x-cache': 'HIT, MISS',
+23 silly registry.get     'x-cache-hits': '1, 0',
+23 silly registry.get     'x-timer': 'S1400229290.892468929,VS0,VS37,VE112,VE11067726',
+23 silly registry.get     vary: 'Accept',
+23 silly registry.get     'keep-alive': 'timeout=10, max=50',
+23 silly registry.get     connection: 'Keep-Alive' } ]
+24 silly addNameRange number 2 { name: 'express-generator', range: '*', hasData: true }
+25 silly addNameRange versions [ 'express-generator', [ '1.0.0', '3.0.0', '4.0.0', '4.2.0' ] ]
+26 verbose addNamed [ 'express-generator', '4.2.0' ]
+27 verbose addNamed [ '4.2.0', '4.2.0' ]
+28 silly lockFile a399865e-express-generator-4-2-0 express-generator@4.2.0
+29 verbose lock express-generator@4.2.0 /home/ggice/.npm/a399865e-express-generator-4-2-0.lock
+30 silly lockFile ce1347ea-ator-express-generator-4-2-0-tgz https://registry.npmjs.org/express-generator/-/express-generator-4.2.0.tgz
+31 verbose lock https://registry.npmjs.org/express-generator/-/express-generator-4.2.0.tgz /home/ggice/.npm/ce1347ea-ator-express-generator-4-2-0-tgz.lock
+32 verbose addRemoteTarball [ 'https://registry.npmjs.org/express-generator/-/express-generator-4.2.0.tgz',
+32 verbose addRemoteTarball   '98ede7b9d1cbab2ece9cd236511ab42f7bd9298a' ]
+33 info retry fetch attempt 1 at 19:39:18
+34 verbose fetch to= /home/ggice/tmp/npm-8932-b2c7Qjhl/1400240358717-0.02187411650083959/tmp.tgz
+35 http GET https://registry.npmjs.org/express-generator/-/express-generator-4.2.0.tgz
+36 http 200 https://registry.npmjs.org/express-generator/-/express-generator-4.2.0.tgz
+37 verbose tar unpack /home/ggice/tmp/npm-8932-b2c7Qjhl/1400240358717-0.02187411650083959/tmp.tgz
+38 silly lockFile 7cdeb9fd-8717-0-02187411650083959-package tar:///home/ggice/tmp/npm-8932-b2c7Qjhl/1400240358717-0.02187411650083959/package
+39 verbose lock tar:///home/ggice/tmp/npm-8932-b2c7Qjhl/1400240358717-0.02187411650083959/package /home/ggice/.npm/7cdeb9fd-8717-0-02187411650083959-package.lock
+40 silly lockFile 8457128d-8717-0-02187411650083959-tmp-tgz tar:///home/ggice/tmp/npm-8932-b2c7Qjhl/1400240358717-0.02187411650083959/tmp.tgz
+41 verbose lock tar:///home/ggice/tmp/npm-8932-b2c7Qjhl/1400240358717-0.02187411650083959/tmp.tgz /home/ggice/.npm/8457128d-8717-0-02187411650083959-tmp-tgz.lock
+42 silly gunzTarPerm modes [ '755', '644' ]
+43 silly gunzTarPerm extractEntry package.json
+44 silly gunzTarPerm extractEntry .npmignore
+45 silly gunzTarPerm extractEntry README.md
+46 silly gunzTarPerm extractEntry LICENSE
+47 silly gunzTarPerm extractEntry bin/express
+48 silly gunzTarPerm extractEntry templates/css/style.css
+49 silly gunzTarPerm extractEntry templates/css/style.less
+50 silly gunzTarPerm extractEntry templates/css/style.scss
+51 silly gunzTarPerm extractEntry templates/css/style.styl
+52 silly gunzTarPerm extractEntry templates/ejs/error.ejs
+53 silly gunzTarPerm extractEntry templates/ejs/index.ejs
+54 silly gunzTarPerm extractEntry templates/hogan/error.hjs
+55 silly gunzTarPerm extractEntry templates/hogan/index.hjs
+56 silly gunzTarPerm extractEntry templates/jade/error.jade
+57 silly gunzTarPerm extractEntry templates/jade/index.jade
+58 silly gunzTarPerm extractEntry templates/jade/layout.jade
+59 silly gunzTarPerm extractEntry templates/js/app.js
+60 silly gunzTarPerm extractEntry templates/js/routes/index.js
+61 silly gunzTarPerm extractEntry templates/js/routes/users.js
+62 silly gunzTarPerm extractEntry templates/js/www
+63 silly lockFile 7cdeb9fd-8717-0-02187411650083959-package tar:///home/ggice/tmp/npm-8932-b2c7Qjhl/1400240358717-0.02187411650083959/package
+64 silly lockFile 7cdeb9fd-8717-0-02187411650083959-package tar:///home/ggice/tmp/npm-8932-b2c7Qjhl/1400240358717-0.02187411650083959/package
+65 silly lockFile 8457128d-8717-0-02187411650083959-tmp-tgz tar:///home/ggice/tmp/npm-8932-b2c7Qjhl/1400240358717-0.02187411650083959/tmp.tgz
+66 silly lockFile 8457128d-8717-0-02187411650083959-tmp-tgz tar:///home/ggice/tmp/npm-8932-b2c7Qjhl/1400240358717-0.02187411650083959/tmp.tgz
+67 verbose tar pack [ '/home/ggice/.npm/express-generator/4.2.0/package.tgz',
+67 verbose tar pack   '/home/ggice/tmp/npm-8932-b2c7Qjhl/1400240358717-0.02187411650083959/package' ]
+68 verbose tarball /home/ggice/.npm/express-generator/4.2.0/package.tgz
+69 verbose folder /home/ggice/tmp/npm-8932-b2c7Qjhl/1400240358717-0.02187411650083959/package
+70 silly lockFile 7cdeb9fd-8717-0-02187411650083959-package tar:///home/ggice/tmp/npm-8932-b2c7Qjhl/1400240358717-0.02187411650083959/package
+71 verbose lock tar:///home/ggice/tmp/npm-8932-b2c7Qjhl/1400240358717-0.02187411650083959/package /home/ggice/.npm/7cdeb9fd-8717-0-02187411650083959-package.lock
+72 silly lockFile 8b044f5e-ress-generator-4-2-0-package-tgz tar:///home/ggice/.npm/express-generator/4.2.0/package.tgz
+73 verbose lock tar:///home/ggice/.npm/express-generator/4.2.0/package.tgz /home/ggice/.npm/8b044f5e-ress-generator-4-2-0-package-tgz.lock
+74 silly lockFile 7cdeb9fd-8717-0-02187411650083959-package tar:///home/ggice/tmp/npm-8932-b2c7Qjhl/1400240358717-0.02187411650083959/package
+75 silly lockFile 7cdeb9fd-8717-0-02187411650083959-package tar:///home/ggice/tmp/npm-8932-b2c7Qjhl/1400240358717-0.02187411650083959/package
+76 silly lockFile 8b044f5e-ress-generator-4-2-0-package-tgz tar:///home/ggice/.npm/express-generator/4.2.0/package.tgz
+77 silly lockFile 8b044f5e-ress-generator-4-2-0-package-tgz tar:///home/ggice/.npm/express-generator/4.2.0/package.tgz
+78 silly lockFile a0444cda--express-generator-4-2-0-package /home/ggice/.npm/express-generator/4.2.0/package
+79 verbose lock /home/ggice/.npm/express-generator/4.2.0/package /home/ggice/.npm/a0444cda--express-generator-4-2-0-package.lock
+80 silly lockFile a0444cda--express-generator-4-2-0-package /home/ggice/.npm/express-generator/4.2.0/package
+81 silly lockFile a0444cda--express-generator-4-2-0-package /home/ggice/.npm/express-generator/4.2.0/package
+82 verbose tar unpack /home/ggice/.npm/express-generator/4.2.0/package.tgz
+83 silly lockFile 6eb5015d--express-generator-4-2-0-package tar:///home/ggice/.npm/express-generator/4.2.0/package
+84 verbose lock tar:///home/ggice/.npm/express-generator/4.2.0/package /home/ggice/.npm/6eb5015d--express-generator-4-2-0-package.lock
+85 silly lockFile 8b044f5e-ress-generator-4-2-0-package-tgz tar:///home/ggice/.npm/express-generator/4.2.0/package.tgz
+86 verbose lock tar:///home/ggice/.npm/express-generator/4.2.0/package.tgz /home/ggice/.npm/8b044f5e-ress-generator-4-2-0-package-tgz.lock
+87 silly gunzTarPerm modes [ '755', '644' ]
+88 silly gunzTarPerm extractEntry package.json
+89 silly gunzTarPerm extractEntry .npmignore
+90 silly gunzTarPerm extractEntry README.md
+91 silly gunzTarPerm extractEntry LICENSE
+92 silly gunzTarPerm extractEntry bin/express
+93 silly gunzTarPerm extractEntry templates/css/style.css
+94 silly gunzTarPerm extractEntry templates/css/style.less
+95 silly gunzTarPerm extractEntry templates/css/style.scss
+96 silly gunzTarPerm extractEntry templates/css/style.styl
+97 silly gunzTarPerm extractEntry templates/ejs/error.ejs
+98 silly gunzTarPerm extractEntry templates/ejs/index.ejs
+99 silly gunzTarPerm extractEntry templates/hogan/error.hjs
+100 silly gunzTarPerm extractEntry templates/hogan/index.hjs
+101 silly gunzTarPerm extractEntry templates/jade/error.jade
+102 silly gunzTarPerm extractEntry templates/jade/index.jade
+103 silly gunzTarPerm extractEntry templates/jade/layout.jade
+104 silly gunzTarPerm extractEntry templates/js/app.js
+105 silly gunzTarPerm extractEntry templates/js/routes/index.js
+106 silly gunzTarPerm extractEntry templates/js/routes/users.js
+107 silly gunzTarPerm extractEntry templates/js/www
+108 silly lockFile 6eb5015d--express-generator-4-2-0-package tar:///home/ggice/.npm/express-generator/4.2.0/package
+109 silly lockFile 6eb5015d--express-generator-4-2-0-package tar:///home/ggice/.npm/express-generator/4.2.0/package
+110 silly lockFile 8b044f5e-ress-generator-4-2-0-package-tgz tar:///home/ggice/.npm/express-generator/4.2.0/package.tgz
+111 silly lockFile 8b044f5e-ress-generator-4-2-0-package-tgz tar:///home/ggice/.npm/express-generator/4.2.0/package.tgz
+112 verbose chmod /home/ggice/.npm/express-generator/4.2.0/package.tgz 644
+113 verbose chown /home/ggice/.npm/express-generator/4.2.0/package.tgz [ 1000, 1000 ]
+114 silly lockFile ce1347ea-ator-express-generator-4-2-0-tgz https://registry.npmjs.org/express-generator/-/express-generator-4.2.0.tgz
+115 silly lockFile ce1347ea-ator-express-generator-4-2-0-tgz https://registry.npmjs.org/express-generator/-/express-generator-4.2.0.tgz
+116 silly lockFile a399865e-express-generator-4-2-0 express-generator@4.2.0
+117 silly lockFile a399865e-express-generator-4-2-0 express-generator@4.2.0
+118 silly lockFile bd41e3d3-express-generator express-generator@
+119 silly lockFile bd41e3d3-express-generator express-generator@
+120 silly resolved [ { name: 'express-generator',
+120 silly resolved     description: 'Express\' application generator',
+120 silly resolved     version: '4.2.0',
+120 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+120 silly resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+120 silly resolved     dependencies: { commander: '1.3.2', mkdirp: '0.3.5' },
+120 silly resolved     keywords:
+120 silly resolved      [ 'express',
+120 silly resolved        'framework',
+120 silly resolved        'sinatra',
+120 silly resolved        'web',
+120 silly resolved        'rest',
+120 silly resolved        'restful',
+120 silly resolved        'router',
+120 silly resolved        'app',
+120 silly resolved        'api' ],
+120 silly resolved     repository: { type: 'git', url: 'git://github.com/expressjs/generator' },
+120 silly resolved     main: 'bin/express',
+120 silly resolved     bin: { express: './bin/express' },
+120 silly resolved     engines: { node: '>= 0.8.0' },
+120 silly resolved     readme: '[![express logo](http://f.cl.ly/items/0V2S1n0K1i3y1c122g04/Screen%20Shot%202012-04-11%20at%209.59.42%20AM.png)](http://expressjs.com/)\n\n  Fast, unopinionated, minimalist web framework for [node](http://nodejs.org).\n\n  [![Gittip](http://img.shields.io/gittip/visionmedia.png)](https://www.gittip.com/visionmedia/)\n\n## Quick Start\n\n The quickest way to get started with express is to utilize the executable `express(1)` to generate an application as shown below:\n\n Create the app:\n\n    $ npm install -g express-generator\n    $ express /tmp/foo && cd /tmp/foo\n\n Install dependencies:\n\n    $ npm install\n\n Rock and Roll\n\n    $ npm start\n\n## License\n\n(The MIT License)\n\nCopyright (c) 2009-2012 TJ Holowaychuk &lt;tj@vision-media.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+120 silly resolved     readmeFilename: 'README.md',
+120 silly resolved     bugs: { url: 'https://github.com/expressjs/generator/issues' },
+120 silly resolved     homepage: 'https://github.com/expressjs/generator',
+120 silly resolved     _id: 'express-generator@4.2.0',
+120 silly resolved     dist: { shasum: '89b14d3811f60ebbe09b74a3048d1d001b402327' },
+120 silly resolved     _from: 'express-generator@',
+120 silly resolved     _resolved: 'https://registry.npmjs.org/express-generator/-/express-generator-4.2.0.tgz' } ]
+121 info install express-generator@4.2.0 into /usr/local/lib
+122 info installOne express-generator@4.2.0
+123 info /usr/local/lib/node_modules/express-generator unbuild
+124 info preuninstall express-generator@4.0.0
+125 info uninstall express-generator@4.0.0
+126 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild express-generator@4.0.0
+127 verbose /usr/local/bin,[object Object] binRoot
+128 info /usr/local/lib/node_modules/express-generator unbuild
+129 info preuninstall express-generator@4.0.0
+130 info uninstall express-generator@4.0.0
+131 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild express-generator@4.0.0
+132 verbose /usr/local/bin,[object Object] binRoot
+133 error error rolling back Error: EACCES, unlink '/usr/local/bin/express'
+133 error error rolling back  express-generator@4.2.0 { [Error: EACCES, unlink '/usr/local/bin/express'] errno: 3, code: 'EACCES', path: '/usr/local/bin/express' }
+134 error Error: EACCES, unlink '/usr/local/bin/express'
+134 error  { [Error: EACCES, unlink '/usr/local/bin/express'] errno: 3, code: 'EACCES', path: '/usr/local/bin/express' }
+135 error Please try running this command again as root/Administrator.
+136 error System Linux 3.13.7-031307-generic
+137 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "express-generator"
+138 error cwd /home/ggice/code/book/nodejsstart
+139 error node -v v0.10.26
+140 error npm -v 1.4.3
+141 error path /usr/local/bin/express
+142 error code EACCES
+143 error errno 3
+144 error stack Error: EACCES, unlink '/usr/local/bin/express'
+145 verbose exit [ 3, true ]

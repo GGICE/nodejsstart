@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
-<html lang="en-US" manifest="./manifest.appcache">
+<html lang="en-US" manifest="../manifest.appcache">
     <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
         
         <meta charset="UTF-8">
-        <title>Introduction | 60分钟学会使用Node.js+Express+mongoDB</title>
+        <title>第三部分 创建数据库并存取数据 | 60分钟学会使用Node.js+Express+mongoDB</title>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="robots" content="index, follow">
@@ -13,11 +13,13 @@
         <meta name="generator" content="www.gitbook.io">
 
         
-        <link rel="next" href="./part1/第一部分 15分钟的安装时间.html" />
+        <link rel="next" href="../part3/安装MONGODB数据库.html" />
         
+        
+        <link rel="prev" href="../part2/第二部分 开始写‘’Hello World‘.html" />
         
 
-        <meta property="og:title" content="Introduction | 60分钟学会使用Node.js+Express+mongoDB">
+        <meta property="og:title" content="第三部分 创建数据库并存取数据 | 60分钟学会使用Node.js+Express+mongoDB">
         <meta property="og:site_name" content="60分钟学会使用Node.js+Express+mongoDB">
         <meta property="og:type" content="book">
         <meta property="og:locale" content="en_US">
@@ -29,18 +31,18 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
         
     </head>
     <body>
         
 
-        <link rel="stylesheet" href="gitbook/style.css">
+        <link rel="stylesheet" href="../gitbook/style.css">
         
 
 
         
-    <div class="book" data-github="ggice/nodejsstart" data-level="0" data-basepath="." data-revision="1400316818264">
+    <div class="book" data-github="ggice/nodejsstart" data-level="3" data-basepath=".." data-revision="1400316818264">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -89,7 +91,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-spinner fa-spin"></i>
-        <a href="./" >60分钟学会使用Node.js+Express+mongoDB</a>
+        <a href="../" >60分钟学会使用Node.js+Express+mongoDB</a>
     </h1>
 </div>
 
@@ -106,17 +108,17 @@
             <a href="https://github.com/ggice/nodejsstart/issues" target="blank">Questions and Issues</a>
         </li>
         <li>
-            <a href="https://github.com/ggice/nodejsstart/edit/master/README.md" target="blank">Edit and Contribute</a>
+            <a href="https://github.com/ggice/nodejsstart/edit/master/part3/创建数据库并存取数据.md" target="blank">Edit and Contribute</a>
         </li>
         <li class="divider"></li>
         
         <li data-level="0" data-path="index.html">
-            <a href="./"><i class="fa fa-check"></i> Introduction</a>
+            <a href="../"><i class="fa fa-check"></i> Introduction</a>
         </li>
         
             <li  data-level="1" data-path="part1/第一部分 15分钟的安装时间.html">
                 
-                <a href="./part1/第一部分 15分钟的安装时间.html">
+                <a href="../part1/第一部分 15分钟的安装时间.html">
                     <i class="fa fa-check"></i> <b>1.</b> 第一部分 15分钟的安装时间
                 </a>
                 
@@ -125,7 +127,7 @@
                     
                         <li  data-level="1.1" data-path="part1/第一步 安装Node.js.html">
                             
-                            <a href="./part1/第一步 安装Node.js.html">
+                            <a href="../part1/第一步 安装Node.js.html">
                                 <i class="fa fa-check"></i> <b>1.1.</b> 1.1安装Node.js
                             </a>
                             
@@ -133,7 +135,7 @@
                     
                         <li  data-level="1.2" data-path="part1/安装Express.html">
                             
-                            <a href="./part1/安装Express.html">
+                            <a href="../part1/安装Express.html">
                                 <i class="fa fa-check"></i> <b>1.2.</b> 1.2安装Express
                             </a>
                             
@@ -141,7 +143,7 @@
                     
                         <li  data-level="1.3" data-path="part1/创建一个Express项目.html">
                             
-                            <a href="./part1/创建一个Express项目.html">
+                            <a href="../part1/创建一个Express项目.html">
                                 <i class="fa fa-check"></i> <b>1.3.</b> 1.3创建一个Express项目
                             </a>
                             
@@ -149,7 +151,7 @@
                     
                         <li  data-level="1.4" data-path="part1/编辑相关内容.html">
                             
-                            <a href="./part1/编辑相关内容.html">
+                            <a href="../part1/编辑相关内容.html">
                                 <i class="fa fa-check"></i> <b>1.4.</b> 1.4编辑相关内容
                             </a>
                             
@@ -157,7 +159,7 @@
                     
                         <li  data-level="1.5" data-path="part1/安装依赖.html">
                             
-                            <a href="./part1/安装依赖.html">
+                            <a href="../part1/安装依赖.html">
                                 <i class="fa fa-check"></i> <b>1.5.</b> 1.5安装依赖
                             </a>
                             
@@ -169,7 +171,7 @@
         
             <li  data-level="2" data-path="part2/第二部分 开始写‘’Hello World‘.html">
                 
-                <a href="./part2/第二部分 开始写‘’Hello World‘.html">
+                <a href="../part2/第二部分 开始写‘’Hello World‘.html">
                     <i class="fa fa-check"></i> <b>2.</b> 第二部分 开始写‘’Hello World‘
                 </a>
                 
@@ -178,7 +180,7 @@
         
             <li  data-level="3" data-path="part3/创建数据库并存取数据.html">
                 
-                <a href="./part3/创建数据库并存取数据.html">
+                <a href="../part3/创建数据库并存取数据.html">
                     <i class="fa fa-check"></i> <b>3.</b> 第三部分 创建数据库并存取数据
                 </a>
                 
@@ -187,7 +189,7 @@
                     
                         <li  data-level="3.1" data-path="part3/安装MONGODB数据库.html">
                             
-                            <a href="./part3/安装MONGODB数据库.html">
+                            <a href="../part3/安装MONGODB数据库.html">
                                 <i class="fa fa-check"></i> <b>3.1.</b> 3.1安装MONGODB数据库
                             </a>
                             
@@ -195,7 +197,7 @@
                     
                         <li  data-level="3.2" data-path="part3/README.html">
                             
-                            <a href="./part3/README.html">
+                            <a href="../part3/README.html">
                                 <i class="fa fa-check"></i> <b>3.2.</b> 3.2运行 MONGOD 和 MONGO
                             </a>
                             
@@ -203,7 +205,7 @@
                     
                         <li  data-level="3.3" data-path="part3/建立一个数据库.html">
                             
-                            <a href="./part3/建立一个数据库.html">
+                            <a href="../part3/建立一个数据库.html">
                                 <i class="fa fa-check"></i> <b>3.3.</b> 3.3建立一个数据库
                             </a>
                             
@@ -211,7 +213,7 @@
                     
                         <li  data-level="3.4" data-path="part3/添加数据.html">
                             
-                            <a href="./part3/添加数据.html">
+                            <a href="../part3/添加数据.html">
                                 <i class="fa fa-check"></i> <b>3.4.</b> 3.4添加数据
                             </a>
                             
@@ -219,7 +221,7 @@
                     
                         <li  data-level="3.5" data-path="part3/链接Mongo和Node.js.html">
                             
-                            <a href="./part3/链接Mongo和Node.js.html">
+                            <a href="../part3/链接Mongo和Node.js.html">
                                 <i class="fa fa-check"></i> <b>3.5.</b> 3.5链接Mongo和Node.js
                             </a>
                             
@@ -231,7 +233,7 @@
         
             <li  data-level="4" data-path="part4/第四部分 写入数据库.html">
                 
-                <a href="./part4/第四部分 写入数据库.html">
+                <a href="../part4/第四部分 写入数据库.html">
                     <i class="fa fa-check"></i> <b>4.</b> 第四部分 写入数据库
                 </a>
                 
@@ -240,7 +242,7 @@
                     
                         <li  data-level="4.1" data-path="part4/4.1建立数据输入.html">
                             
-                            <a href="./part4/4.1建立数据输入.html">
+                            <a href="../part4/4.1建立数据输入.html">
                                 <i class="fa fa-check"></i> <b>4.1.</b> 4.1建立数据输入
                             </a>
                             
@@ -248,7 +250,7 @@
                     
                         <li  data-level="4.2" data-path="part4/建立数据库函数.html">
                             
-                            <a href="./part4/建立数据库函数.html">
+                            <a href="../part4/建立数据库函数.html">
                                 <i class="fa fa-check"></i> <b>4.2.</b> 4.2建立数据库函数
                             </a>
                             
@@ -256,7 +258,7 @@
                     
                         <li  data-level="4.3" data-path="part4/连接并且数据存入数据库.html">
                             
-                            <a href="./part4/连接并且数据存入数据库.html">
+                            <a href="../part4/连接并且数据存入数据库.html">
                                 <i class="fa fa-check"></i> <b>4.3.</b> 4.3连接并且数据存入数据库
                             </a>
                             
@@ -268,7 +270,7 @@
         
             <li  data-level="5" data-path="part5/Chapter.html">
                 
-                <a href="./part5/Chapter.html">
+                <a href="../part5/Chapter.html">
                     <i class="fa fa-check"></i> <b>5.</b> 接下来下一步
                 </a>
                 
@@ -283,73 +285,56 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 0%;min-width: 0%;"></div>
+        <div class="inner" style="width: 44.44444444444444%;min-width: 38.888888888888886%;"></div>
     </div>
     <div class="chapters">
     
-        <a href="./index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
     
-        <a href="./part1/第一部分 15分钟的安装时间.html" title="第一部分 15分钟的安装时间" class="chapter  new-chapter" data-progress="1" style="left: 5.555555555555555%;"></a>
+        <a href="../part1/第一部分 15分钟的安装时间.html" title="第一部分 15分钟的安装时间" class="chapter done new-chapter" data-progress="1" style="left: 5.555555555555555%;"></a>
     
-        <a href="./part1/第一步 安装Node.js.html" title="1.1安装Node.js" class="chapter  " data-progress="1.1" style="left: 11.11111111111111%;"></a>
+        <a href="../part1/第一步 安装Node.js.html" title="1.1安装Node.js" class="chapter done " data-progress="1.1" style="left: 11.11111111111111%;"></a>
     
-        <a href="./part1/安装Express.html" title="1.2安装Express" class="chapter  " data-progress="1.2" style="left: 16.666666666666668%;"></a>
+        <a href="../part1/安装Express.html" title="1.2安装Express" class="chapter done " data-progress="1.2" style="left: 16.666666666666668%;"></a>
     
-        <a href="./part1/创建一个Express项目.html" title="1.3创建一个Express项目" class="chapter  " data-progress="1.3" style="left: 22.22222222222222%;"></a>
+        <a href="../part1/创建一个Express项目.html" title="1.3创建一个Express项目" class="chapter done " data-progress="1.3" style="left: 22.22222222222222%;"></a>
     
-        <a href="./part1/编辑相关内容.html" title="1.4编辑相关内容" class="chapter  " data-progress="1.4" style="left: 27.77777777777778%;"></a>
+        <a href="../part1/编辑相关内容.html" title="1.4编辑相关内容" class="chapter done " data-progress="1.4" style="left: 27.77777777777778%;"></a>
     
-        <a href="./part1/安装依赖.html" title="1.5安装依赖" class="chapter  " data-progress="1.5" style="left: 33.333333333333336%;"></a>
+        <a href="../part1/安装依赖.html" title="1.5安装依赖" class="chapter done " data-progress="1.5" style="left: 33.333333333333336%;"></a>
     
-        <a href="./part2/第二部分 开始写‘’Hello World‘.html" title="第二部分 开始写‘’Hello World‘" class="chapter  new-chapter" data-progress="2" style="left: 38.888888888888886%;"></a>
+        <a href="../part2/第二部分 开始写‘’Hello World‘.html" title="第二部分 开始写‘’Hello World‘" class="chapter done new-chapter" data-progress="2" style="left: 38.888888888888886%;"></a>
     
-        <a href="./part3/创建数据库并存取数据.html" title="第三部分 创建数据库并存取数据" class="chapter  new-chapter" data-progress="3" style="left: 44.44444444444444%;"></a>
+        <a href="../part3/创建数据库并存取数据.html" title="第三部分 创建数据库并存取数据" class="chapter done new-chapter" data-progress="3" style="left: 44.44444444444444%;"></a>
     
-        <a href="./part3/安装MONGODB数据库.html" title="3.1安装MONGODB数据库" class="chapter  " data-progress="3.1" style="left: 50%;"></a>
+        <a href="../part3/安装MONGODB数据库.html" title="3.1安装MONGODB数据库" class="chapter  " data-progress="3.1" style="left: 50%;"></a>
     
-        <a href="./part3/README.html" title="3.2运行 MONGOD 和 MONGO" class="chapter  " data-progress="3.2" style="left: 55.55555555555556%;"></a>
+        <a href="../part3/README.html" title="3.2运行 MONGOD 和 MONGO" class="chapter  " data-progress="3.2" style="left: 55.55555555555556%;"></a>
     
-        <a href="./part3/建立一个数据库.html" title="3.3建立一个数据库" class="chapter  " data-progress="3.3" style="left: 61.111111111111114%;"></a>
+        <a href="../part3/建立一个数据库.html" title="3.3建立一个数据库" class="chapter  " data-progress="3.3" style="left: 61.111111111111114%;"></a>
     
-        <a href="./part3/添加数据.html" title="3.4添加数据" class="chapter  " data-progress="3.4" style="left: 66.66666666666667%;"></a>
+        <a href="../part3/添加数据.html" title="3.4添加数据" class="chapter  " data-progress="3.4" style="left: 66.66666666666667%;"></a>
     
-        <a href="./part3/链接Mongo和Node.js.html" title="3.5链接Mongo和Node.js" class="chapter  " data-progress="3.5" style="left: 72.22222222222223%;"></a>
+        <a href="../part3/链接Mongo和Node.js.html" title="3.5链接Mongo和Node.js" class="chapter  " data-progress="3.5" style="left: 72.22222222222223%;"></a>
     
-        <a href="./part4/第四部分 写入数据库.html" title="第四部分 写入数据库" class="chapter  new-chapter" data-progress="4" style="left: 77.77777777777777%;"></a>
+        <a href="../part4/第四部分 写入数据库.html" title="第四部分 写入数据库" class="chapter  new-chapter" data-progress="4" style="left: 77.77777777777777%;"></a>
     
-        <a href="./part4/4.1建立数据输入.html" title="4.1建立数据输入" class="chapter  " data-progress="4.1" style="left: 83.33333333333333%;"></a>
+        <a href="../part4/4.1建立数据输入.html" title="4.1建立数据输入" class="chapter  " data-progress="4.1" style="left: 83.33333333333333%;"></a>
     
-        <a href="./part4/建立数据库函数.html" title="4.2建立数据库函数" class="chapter  " data-progress="4.2" style="left: 88.88888888888889%;"></a>
+        <a href="../part4/建立数据库函数.html" title="4.2建立数据库函数" class="chapter  " data-progress="4.2" style="left: 88.88888888888889%;"></a>
     
-        <a href="./part4/连接并且数据存入数据库.html" title="4.3连接并且数据存入数据库" class="chapter  " data-progress="4.3" style="left: 94.44444444444444%;"></a>
+        <a href="../part4/连接并且数据存入数据库.html" title="4.3连接并且数据存入数据库" class="chapter  " data-progress="4.3" style="left: 94.44444444444444%;"></a>
     
-        <a href="./part5/Chapter.html" title="接下来下一步" class="chapter  new-chapter" data-progress="5" style="left: 100%;"></a>
+        <a href="../part5/Chapter.html" title="接下来下一步" class="chapter  new-chapter" data-progress="5" style="left: 100%;"></a>
     
     </div>
 </div>
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_1186">
+                    <section class="normal" id="section-gitbook_1194">
                     
-                        <h1 id="60-node-js-express-mongodb">60分钟学会使用Node.js+Express+mongoDB</h1>
-<p>原文地址<a href="http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/" target="_blank">http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/</a></p>
-<p>这是一套非常简单的入门教程，希望给喜欢Node的童鞋一个简单易学的入门指导。我采用（2014年05月16日）较新版本的Node.js(v0.10.26)，Express(v4.x)，mongoDB（v2.0.4）本教程代码测试可以正常运行。</p>
-<p>本来是想翻译成中文版本的，可是后来觉得连我英语这么渣渣的都能看懂，想必没有多大的翻译意义！</p>
-<p>我的<a href="http://ice.gs/blog" target="_blank">博客</a> 我的微博<a href="http://weibo.com/309683593" target="_blank">@GGICE</a></p>
-<p>----------------------------------------------begin-----------------------------------------------</p>
-<p>There are approximately one hundred million tutorials on the web for getting a &quot;Hello, World! &quot; app running with Node.js. This is great! It&#39;s especially great if your goal is to greet the world and then give up on your web career and go spend the rest of your life as, like, a jockey or something. That doesn&#39;t really describe most of us, so we go looking for more tutorials.</p>
-<p>在如今的互联网上成千上万的教程教您用Node.js运行“hello world”。这是伟大的!是非常伟大的,如果你的目标是迎接世界,然后放弃您的web开发，像骑士一样去度过你的一生生。这并不真正的描述我们大多数人,所以我们去寻找更多的教程。</p>
-<p>In my experience, the &quot;next level&quot; tutorials out there seem about 30 levels further along. We go from &quot;Hello, World! &quot; to building out an entire blogging system with comments. Which is also great, but a lot of times those tutorials assume the reader has done a whole bunch of intermediate fiddling, and they often drop a bunch of big functions on you all at once. I tend to learn best by making lots of smaller, intermediate steps, and I don&#39;t think I&#39;m the only one.</p>
-<p>根据我的经验,“下一阶段”教程看起来大约30个阶段一样遥远。我们从“你好,世界!“构建一个完整的带有评论功能的博客系统。也不错,但是很多时候这些教程引导读者做了一大堆没用的中间环节,往往突然就落下一大堆的函数。我倾向于从许多小的部分开始学习，通过适当的步骤,我不认为我是唯一一个这样认为的人。</p>
-<p>I&#39;m not the only one, right?
-我不是唯一的一个,对吗?</p>
-<p>Well, good news, everyone! I&#39;ve done the fiddling and read a bunch of tutorials and shouted at my command prompt until things finally worked. I have a web project up and running which uses Node. JS, the Express framework, the Jade HTML pre-processor, and MongoDB for data. I can read to and write from the DB. From there, the sky&#39;s the limit.</p>
-<p>好了，给大家一个好消息!我已经做了一些事情,读一堆教程然后冲着我的命令提示符咆哮,直到它最终工作起来。我有一个基于Node.jsde的web项目。用到了Expres框架,Jade HTML pre-processor,MongoDB数据库。我可以读写数据库,从那开始世界变得美好了。</p>
-<p>Your app will look pretty, it will connect to a DB, it&#39;ll get some results, and it&#39;ll do stuff with those results. Then for kicks we&#39;ll also make it save data to the DB. Through it all, I will explain what the code does, and how to write it, instead of just giving you massive functions to stare at. We&#39;ll go from nothing even installed, to a DB-driven web app written in a language you fully understand, and the foundation necessary to build additional functionality into your app. And we&#39;ll do it in about 60 minutes of installation and coding time. Is that awesome? I submit that it is.</p>
-<p>你的应用程序将会看起来很漂亮,它将连接到一个数据库,它会得到一些结果,它要做的东西与结果。然后为了好玩我们还将数据保存到数据库。通过这一切,我将解释代码做了什么,以及如何写它,而不是让你盯着巨大的函数。我们会从一无所有开始,用你完全可以明白的语言写的数据库驱动程序,和额外的功能构建到应用程序所需的基础。我们的安装和编码时间大概花费60分钟。是不是非常酷?我认为是的。</p>
-<p>Let&#39;s go.</p>
-<p>我们开始吧。</p>
+                        <h1 id="-">创建数据库并存取数据</h1>
 
                     
                     </section>
@@ -359,8 +344,10 @@
         </div>
 
         
+        <a href="../part2/第二部分 开始写‘’Hello World‘.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
         
-        <a href="./part1/第一部分 15分钟的安装时间.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        
+        <a href="../part3/安装MONGODB数据库.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
@@ -369,12 +356,12 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
-        <script src="gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
-        <script src="gitbook/app.js"></script>
+        <script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="../gitbook/app.js"></script>
         
 
     
-    <script src="gitbook/plugins/gitbook-plugin-mixpanel/plugin.js"></script>
+    <script src="../gitbook/plugins/gitbook-plugin-mixpanel/plugin.js"></script>
     
 
     
@@ -382,7 +369,7 @@
     
 
     
-    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
     
 
 <script>
